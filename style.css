@@ -1,107 +1,119 @@
+/* Общие стили */
 body {
-    font-family: 'Times New Roman', serif;
-    line-height: 1.6;
+    font-family: 'PT Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f9f9f9;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-.container {
-    width: 100%;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+  }
+  
+  .container {
     max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header {
-    background-color: #d32f2f;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    width: 100%;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin: 1rem 0 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 2rem;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-section {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Заголовки */
+  h2 {
+    color: #003366;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 8px;
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  h3 {
+    color: #004080;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Секции */
+  section {
+    margin-bottom: 30px;
+    padding: 20px;
     background-color: white;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 800px;
-    text-align: center;
-}
-
-h2 {
-    color: #d32f2f;
-    border-bottom: 2px solid #d32f2f;
-    padding-bottom: 0.5rem;
-    margin-top: 0;
-}
-
-.leader {
-    background-color: #f5f5f5;
-    padding: 1rem;
-    border-left: 4px solid #d32f2f;
-    margin-top: 1rem;
-    text-align: left;
-}
-
-.goals {
-    margin-top: 1rem;
-    text-align: left;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #d32f2f;
-    color: white;
-    margin-top: 2rem;
-    width: 100%;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Контакты */
+  #contacts {
+    background-color: #f0f7ff;
+  }
+  
+  .leader {
+    background-color: #e6f0ff;
+    padding: 15px;
+    border-left: 4px solid #004080;
+    margin-top: 15px;
+  }
+  
+  .leader p {
+    margin: 5px 0;
+  }
+  
+  /* Документы */
+  #documents ul {
+    columns: 2;
+    column-gap: 30px;
+    padding-left: 20px;
+  }
+  
+  #documents li {
+    margin-bottom: 8px;
+    break-inside: avoid;
+  }
+  
+  /* Ссылки */
+  a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #004080;
+    text-decoration: underline;
+  }
+  
+  /* Нумерованный список */
+  .goals ol {
+    padding-left: 25px;
+  }
+  
+  .goals li {
+    margin-bottom: 8px;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
     }
-
+    
     section {
-        padding: 1rem;
+      padding: 15px;
     }
-}
+    
+    #documents ul {
+      columns: 1;
+    }
+  }
+  
+  /* Элементы в стиле ВГУ */
+  .vgu-style-box {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+  }
+  
+  .vgu-accent {
+    color: #004080;
+    font-weight: bold;
+  }
